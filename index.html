@@ -14,6 +14,11 @@
   <link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
+
+  <!--Vueftify-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
   <style type="text/css">
     /* Necessary for full page carousel*/
     html,
@@ -43,6 +48,8 @@
 </head>
 
 <body>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.js"></script>
+  	<script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.js"></script>
 
   <!--Main layout-->
   <main>
@@ -129,7 +136,7 @@
               <strong>Universitas Negeri Jakarta</strong> and really proud of it.
               </p>
 
-          <div class="text-center mb-4">
+          <div class="text-center">
             <img src="https://image.freepik.com/free-vector/programmer-working-flat-style_52683-15041.jpg" alt="study"
             width="450" height="450" class="img-fluid mb-4">
           </div>
@@ -166,8 +173,8 @@
                   <i class="fas fa-flask fa-lg indigo-text"></i>
                 </div>
                 <div class="col-5">
-                  <h6 class="feature-title">2nd place Men's Futsal</h6>
-                  <p class="grey-text">Chemistry Cup Universitas Negeri Jakarta 2016
+                  <h6 class="feature-title" style="font-size: 18px">2nd place Men's Futsal</h6>
+                  <p class="grey-text" style="font-size: 18px">Chemistry Cup Universitas Negeri Jakarta 2016
                   </p>
                 </div>
                 <!--Award 2-->
@@ -175,8 +182,8 @@
                   <i class="fas fa-atom fa-lg teal-text"></i>
                 </div>
                 <div class="col-5">
-                  <h6 class="feature-title">2nd place Men's Futsal</h6>
-                  <p class="grey-text">Physics Solidarity Game Universitas Negeri Jakarta 2017
+                  <h6 class="feature-title" style="font-size: 18px">2nd place Men's Futsal</h6>
+                  <p class="grey-text" style="font-size: 18px">Physics Solidarity Game Universitas Negeri Jakarta 2017
                   </p>
                 </div>
               </div>
@@ -187,8 +194,8 @@
                   <i class="fas fa-square-root-alt fa-lg teal-text"></i>
                 </div>
                 <div class="col-5">
-                  <h6 class="feature-title">2nd place Men's Volleyball</h6>
-                  <p class="grey-text">Math League Universitas Negeri Jakarta 2017
+                  <h6 class="feature-title" style="font-size: 18px">2nd place Men's Volleyball</h6>
+                  <p class="grey-text" style="font-size: 18px">Math League Universitas Negeri Jakarta 2017
                   </p>
                 </div>
                 <!--Award 4-->
@@ -196,20 +203,20 @@
                   <i class="fas fa-trophy fa-lg indigo-text"></i>
                 </div>
                 <div class="col-5">
-                  <h6 class="feature-title">Scholarship Awardee</h6>
-                  <p class="grey-text">Peningkatan Prestasi Akademik by Kemenristekdikti 2018
+                  <h6 class="feature-title" style="font-size: 18px">Scholarship Awardee</h6>
+                  <p class="grey-text" style="font-size: 18px">Peningkatan Prestasi Akademik by Kemenristekdikti 2018
                   </p>
                 </div>
               </div>
 
               <!--Award 5-->
-              <div class="row mb-4">
+              <div class="row">
                 <div class="col-1 text-center">
                   <i class="fas fa-dragon fa-lg indigo-text"></i>
                 </div>
                 <div class="col-5">
-                  <h6 class="feature-title">2nd place Story Telling</h6>
-                  <p class="grey-text">Festival Keilmiahan Matematika Universitas Negeri Jakarta 2019
+                  <h6 class="feature-title" style="font-size: 18px">2nd place Story Telling Competition</h6>
+                  <p class="grey-text" style="font-size: 18px">Festival Keilmiahan Matematika Universitas Negeri Jakarta 2019
                   </p>
                 </div>
                 <!--Award 6-->
@@ -217,8 +224,8 @@
                   <i class="fas fa-file-alt fa-lg teal-text"></i>
                 </div>
                 <div class="col-5">
-                  <h6 class="feature-title">2nd place Essay</h6>
-                  <p class="grey-text">Harmoni Cinta Guru Universitas Negeri Jakarta 2019
+                  <h6 class="feature-title" style="font-size: 18px">2nd place Essay Competition</h6>
+                  <p class="grey-text" style="font-size: 18px">Harmoni Cinta Guru Universitas Negeri Jakarta 2019
                   </p>
                 </div>
               </div>
@@ -234,79 +241,111 @@
 
       <!--Section: Organizations-->
       <section id="org">
+        <!--Grid row-->
+        <div class="row wow fadeIn">
 
-        <!-- Vertical Steppers -->
-		<div class="row wow fadeIn mt-1">
-			<div class="col-md-2">
-			</div>
-			<div class="col-md-8">
-				<hr class="my-5">
+          <!--Grid column-->
+          <div class="col-md-2"></div>
+          <div class="col-sm-12 col-md-8">
+            <hr class="my-5">
             <h3 class="h3 mb-4">Organizations</h3>
-		    <!-- Stepers Wrapper -->
-		    <ul class="stepper stepper-vertical">
 
-		      <!-- First Step -->
-		      <li class="completed">
-		        <a href="#!">
-		          <span class="circle">1</span>
-		          <span class="label">First step</span>
-		        </a>
-		      </li>
+            <p class="text-justify" style="line-height: 1cm; font-size: 18px">
+              I have been active in student community or organization in my university.
+              They taught me lot of lesson that i wouldn't get in classes. It is been
+              one of the reason i have grew up to become a better person until right now
+              </p>
+              <div style="height:15px"></div>
 
-		      <!-- Second Step -->
-		      <li class="active">
+              <!--Timeline 1-->
+              <div class="row mb-4">
+              	<div class="col-5 text-right z-depth-1">
+                  <p class="feature-title" style="line-height: 1cm; font-size: 18px">
+                  Departemen Advokasi BEM Matematika UNJ</p>
+                  <p class="grey-text" style="font-size: 18px;">2016/2017</p>
+                </div>
+                <div class="col-2 text-center mt-3">
+                  <i class="fas fa-check-circle fa-2x indigo-text"></i>
+                </div>
+                <div class="col-5">
+                </div>
+              </div>
 
-		        <!--Section Title -->
-		        <a href="#!">
-		          <span class="circle">2</span>
-		          <span class="label">Second step</span>
-		        </a>
+              <!--Timeline 2-->
+              <div class="row mb-4">
+              	<div class="col-5">
+                </div>
+                <div class="col-2 text-center mt-3">
+                  <i class="fas fa-check-circle fa-2x indigo-text"></i>
+                </div>
+                <div class="col-5 z-depth-1">
+                  <p class="feature-title" style="line-height: 1cm; font-size: 18px">
+                  Kepala Departemen Advokasi BEM Matematika UNJ</p>
+                  <p class="grey-text" style="font-size: 18px;">2017/2018</p>
+                </div>
+              </div>
 
-		        <!-- Section Description -->
-		        <div class="step-content grey lighten-3">
-		          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse cupiditate voluptate facere
-		            iusto
-		            quaerat
-		            vitae excepturi, accusantium ut aliquam repellat atque nesciunt nostrum similique. Inventore
-		            nostrum
-		            ut,
-		            nobis porro sapiente.</p>
-		          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore error excepturi veniam nemo
-		            repellendus, distinctio soluta vitae at sit saepe. Optio eaque quia excepturi adipisci pariatur
-		            totam,
-		            atque odit fugiat.</p>
-		          <p>Deserunt voluptatem illum quae nisi soluta eum perferendis nesciunt asperiores tempore saepe
-		            reiciendis,
-		            vero quod a dolor corporis natus qui magni quas fuga rem excepturi laboriosam. Quisquam
-		            expedita ab
-		            fugiat.</p>
-		        </div>
-		      </li>
+              <!--Timeline 3-->
+              <div class="row mb-4">
+              	<div class="col-5 text-right z-depth-1">
+                  <p class="feature-title" style="line-height: 1cm; font-size: 18px">
+                  	Divisi Web Development DEFAULT UNJ</p>
+                  <p class="grey-text" style="font-size: 18px;">2017/2018</p>
+                </div>
+                <div class="col-2 text-center mt-3">
+                  <i class="fas fa-check-circle fa-2x indigo-text"></i>
+                </div>
+                <div class="col-5">
+                </div>
+              </div>
 
-		      <!-- Third Step -->
-		      <li class="warning">
-		        <a href="#!">
-		          <span class="circle"><i class="fas fa-exclamation"></i></span>
-		          <span class="label">Third step</span>
-		        </a>
-		      </li>
+              <!--Timeline 4-->
+              <div class="row mb-4">
+              	<div class="col-5">
+                </div>
+                <div class="col-2 text-center mt-3">
+                  <i class="fas fa-check-circle fa-2x indigo-text"></i>
+                </div>
+                <div class="col-5 z-depth-1">
+                  <p class="feature-title" style="line-height: 1cm; font-size: 18px">
+                  Biro PSDM DEFAULT UNJ</p>
+                  <p class="grey-text" style="font-size: 18px;">2017/2018</p>
+                </div>
+              </div>
 
-		      <!-- Fourth Step -->
-		      <li>
-		        <a href="#!">
-		          <span class="circle">4</span>
-		          <span class="label">Fourth step</span>
-		        </a>
-		      </li>
+              <!--Timeline 3-->
+              <div class="row mb-4">
+              	<div class="col-5 text-right z-depth-1">
+                  <p class="feature-title" style="line-height: 1cm; font-size: 18px">
+                  Kepala Departemen Advokasi BEM FMIPA UNJ</p>
+                  <p class="grey-text" style="font-size: 18px;">2018</p>
+                </div>
+                <div class="col-2 text-center mt-3">
+                  <i class="fas fa-check-circle fa-2x indigo-text"></i>
+                </div>
+                <div class="col-5">
+                </div>
+              </div>
 
-		    </ul>
-		    <!-- /.Stepers Wrapper -->
+              <!--Timeline 4-->
+              <div class="row mb-4">
+              	<div class="col-5">
+                </div>
+                <div class="col-2 text-center mt-3">
+                  <i class="fas fa-check-circle fa-2x indigo-text"></i>
+                </div>
+                <div class="col-5 z-depth-1">
+                  <p class="feature-title" style="line-height: 1cm; font-size: 18px">
+                  Kepala Divisi Pelayanan & Isu Departemen Advokasi BEM UNJ</p>
+                  <p class="grey-text" style="font-size: 18px;">2019</p>
+                </div>
+              </div>
 
-		  </div>
-			<div class="col-md-2">
-			</div>
-		</div>
+          </div><div class="col-md-2"></div>
+          <!--/Grid column-->
 
+        </div>
+        <!--/Grid row-->
       </section>
       <!--Section: Organizations-->
 
