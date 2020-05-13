@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <link rel="shortcut icon" href="https://github.com/favicon.ico"/>
   <title>Kelik's Profile</title>
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
@@ -15,10 +16,6 @@
   <!-- Your custom styles (optional) -->
   <link href="css/style.min.css" rel="stylesheet">
 
-  <!--Vueftify-->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/@mdi/font@4.x/css/materialdesignicons.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
   <style type="text/css">
     /* Necessary for full page carousel*/
     html,
@@ -42,7 +39,18 @@
       .navbar:not(.top-nav-collapse) {
           background: #1C2331!important;
       }
-  }
+  	}
+
+  	#myBtn {
+	  display: none;
+	  position: fixed;
+	  bottom: 20px;
+	  right: 30px;
+	  z-index: 99;
+	  cursor: pointer;
+	  padding: 15px;
+	  border-radius: 4px;
+	}
 
   </style>
 </head>
@@ -53,7 +61,7 @@
 
   <!--Main layout-->
   <main>
-    <nav class="navbar navbar-expand-lg navbar-dark indigo">
+    <nav class="navbar navbar-expand-lg navbar-dark indigo" id="top">
       <a class="navbar-brand" href="#">Portofolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -65,19 +73,20 @@
           <span>
             <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="#education">Education</a>
+              <a class="nav-link" href="#study">Study</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Organization</a>
+              <a class="nav-link" href="#award">Award</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Achievement</a>
+              <a class="nav-link" href="#org">Clubs</a>
             </li>
           </ul>
           </span>
         </div>
       </nav>
     <div class="container">
+    	<button onclick="topFunction()" class="btn btn-indigo" id="myBtn"><i class="fas fa-chevron-up"></i></button>
       
       <!--Section: Intro-->
       <section class="mt-5 wow fadeIn">
@@ -100,7 +109,7 @@
 
             <hr>
             <p class="mb-4" style="font-size: 18px;"><strong>Let me introduce my self</strong></p>
-            <p class="mb-4 text-justify" style="line-height: 1cm; font-size: 18px">
+            <p class="text-justify" style="line-height: 1cm; font-size: 18px">
               Im a final year student in Computer Science at <a href="unj.ac.id">Universitas Negeri Jakarta</a>.
               Im a muslim, born in Jakarta, October 27th 1997.
               Living in Jakarta at Kramat 3 Street Lubang Buaya, East Jakarta. 
@@ -117,7 +126,7 @@
       <!--Section: Intro-->  
 
       <!--Section: Study-->
-      <section id="education">
+      <section id="study">
 
         <!--Grid row-->
         <div class="row wow fadeIn">
@@ -252,8 +261,8 @@
 
             <p class="text-justify" style="line-height: 1cm; font-size: 18px">
               I have been active in student community or organization in my university.
-              They taught me lot of lesson that i wouldn't get in classes. It is been
-              one of the reason i have grew up to become a better person until right now
+              They taught me lot of lesson and value that i wouldn't get in classes. 
+              And here is mine
               </p>
               <div style="height:15px"></div>
 
@@ -313,7 +322,7 @@
                 </div>
               </div>
 
-              <!--Timeline 3-->
+              <!--Timeline 5-->
               <div class="row mb-4">
               	<div class="col-5 text-right z-depth-1">
                   <p class="feature-title" style="line-height: 1cm; font-size: 18px">
@@ -327,8 +336,8 @@
                 </div>
               </div>
 
-              <!--Timeline 4-->
-              <div class="row mb-4">
+              <!--Timeline 6-->
+              <div class="row">
               	<div class="col-5">
                 </div>
                 <div class="col-2 text-center mt-3">
@@ -349,6 +358,24 @@
       </section>
       <!--Section: Organizations-->
 
+	<!--Section: Organizations-->
+	<section>
+		<div class="row wow fadeIn">
+			<!--Grid column-->
+          <div class="col-md-2"></div>
+          <div class="col-sm-12 col-md-8">
+            <hr class="my-5">
+            <p style="line-height: 1cm; font-size: 18px;" class="mb-4">
+            	Well, you have reached the final section. 
+            	Don't forget to like, share and subscribe! lol jk.
+            	It is all about me to know and now is your turn! 
+            </p>
+        </div>
+        <div class="col-md-2"></div>
+			
+		</div>
+	</section>
+
     </div>
   </main>
   <!--Main layout-->
@@ -356,59 +383,40 @@
   <!--Footer-->
   <footer class="page-footer text-center font-small mt-4 wow fadeIn">
 
-    <!--Call to action-->
-    <div class="pt-4">
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/docs/jquery/getting-started/download/" target="_blank" role="button">Download MDB
-        <i class="fas fa-download ml-2"></i>
-      </a>
-      <a class="btn btn-outline-white" href="https://mdbootstrap.com/education/bootstrap/" target="_blank" role="button">Start free tutorial
-        <i class="fas fa-graduation-cap ml-2"></i>
-      </a>
-    </div>
-    <!--/.Call to action-->
-
     <hr class="my-4">
 
     <!-- Social icons -->
     <div class="pb-4">
-      <a href="https://www.facebook.com/mdbootstrap" target="_blank">
+      <a href="https://www.facebook.com/" target="_blank">
         <i class="fab fa-facebook-f mr-3"></i>
       </a>
 
-      <a href="https://twitter.com/MDBootstrap" target="_blank">
+      <a href="https://twitter.com/" target="_blank">
         <i class="fab fa-twitter mr-3"></i>
       </a>
 
-      <a href="https://www.youtube.com/watch?v=7MUISDJ5ZZ4" target="_blank">
-        <i class="fab fa-youtube mr-3"></i>
+      <a href="https://instagram.com/" target="_blank">
+        <i class="fab fa-instagram mr-3"></i>
       </a>
 
-      <a href="https://plus.google.com/u/0/b/107863090883699620484" target="_blank">
-        <i class="fab fa-google-plus-g mr-3"></i>
+      <a href="https://ask.fm/" target="_blank">
+        <i class="fab fa-amilia mr-3"></i>
       </a>
 
-      <a href="https://dribbble.com/mdbootstrap" target="_blank">
-        <i class="fab fa-dribbble mr-3"></i>
-      </a>
+      <a href="http://mail.unj.ac.id/" target="_blank">
+        <i class="fas fa-envelope-open mr-3"></i>
+      </a>            
 
-      <a href="https://pinterest.com/mdbootstrap" target="_blank">
-        <i class="fab fa-pinterest mr-3"></i>
-      </a>
-
-      <a href="https://github.com/mdbootstrap/bootstrap-material-design" target="_blank">
-        <i class="fab fa-github mr-3"></i>
-      </a>
-
-      <a href="http://codepen.io/mdbootstrap/" target="_blank">
-        <i class="fab fa-codepen mr-3"></i>
-      </a>
     </div>
     <!-- Social icons -->
 
     <!--Copyright-->
     <div class="footer-copyright py-3">
-      © 2019 Copyright:
-      <a href="https://mdbootstrap.com/education/bootstrap/" target="_blank"> MDBootstrap.com </a>
+      Kelik Is Cahyanto with
+      	<a href="https://mdbootstrap.com/education/bootstrap/" target="_blank">
+      	<i class="fab fa-mdb ml-1 mr-1"></i></a>
+      	<a href="https://github.com/" target="_blank">
+      	<i class="fab fa-github ml-1"></i></a>
     </div>
     <!--/.Copyright-->
 
@@ -428,6 +436,26 @@
   <script type="text/javascript">
     // Animations initialization
     new WOW().init();
+
+    //Get the button
+	var mybutton = document.getElementById("myBtn");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+	    mybutton.style.display = "block";
+	  } else {
+	    mybutton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0;
+	  document.documentElement.scrollTop = 0;
+	}
   </script>
 </body>
 
