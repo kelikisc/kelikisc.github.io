@@ -1,19 +1,19 @@
 /*!
  * Material Design for Bootstrap 4
- * Version: MDB FREE 4.8.11
+ * Version: MDB Free 4.5.8
  *
  *
  * Copyright: Material Design for Bootstrap
  * https://mdbootstrap.com/
  *
- * Read the license: https://mdbootstrap.com/general/license/
+ * Read the license: https://mdbootstrap.com/license/
  *
  *
  * Documentation: https://mdbootstrap.com/
  *
- * Getting started: https://mdbootstrap.com/docs/jquery/getting-started/download/
+ * Getting started: https://mdbootstrap.com/getting-started/
  *
- * Tutorials: https://mdbootstrap.com/education/bootstrap/
+ * Tutorials: https://mdbootstrap.com/bootstrap-tutorial/
  *
  * Templates: https://mdbootstrap.com/templates/
  *
@@ -21,7 +21,7 @@
  *
  * Contact: office@mdbootstrap.com
  *
- * Attribution: Animate CSS, Twitter Bootstrap, Materialize CSS, Normalize CSS, Waves JS, WOW JS, Toastr, Chart.js
+ * Atribution: Animate CSS, Twitter Bootstrap, Materialize CSS, Normalize CSS, Waves JS, WOW JS, Toastr, Chart.js , Hammer.js
  *
  */
 
@@ -30,7 +30,6 @@
 // Bootstrap
 @import "core/bootstrap/functions";
 @import "core/bootstrap/variables";
-@import "core/bootstrap/rfs";
 
 // CORE
 @import "core/mixins";
@@ -46,7 +45,7 @@
 
 // FREE
 @import "free/animations-basic";
-@import "free/modules/animations-extended/module";
+@import "free/animations-extended";
 @import "free/buttons";
 @import "free/cards";
 @import "free/dropdowns";
@@ -62,16 +61,9 @@
 @import "free/list-group";
 @import "free/tables";
 @import "free/depreciated";
-@import "free/steppers";
-@import "free/loader";
-@import "free/treeview";
+
 // Free addons
 // @import "addons/datatables";
-// @import "addons/datatables-select";
-// @import "addons/directives";
-// @import "addons/hierarchical-display";
-// @import "addons/flags";
-// @import "addons/rating";
 
 // Your custom styles
 @import "custom-styles";

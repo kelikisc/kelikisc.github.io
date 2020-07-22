@@ -1,14 +1,13 @@
 // Your custom skin
-// Skins
 $skins: () !default;
 $skins: map-merge((
   "test": (
-    "skin-primary-color":      #fff, 
+    "skin-primary-color":      #fff,
     "skin-navbar":             #fff,
     "skin-footer-color":       #fff,
+    "skin-accent":             #fff,
     "skin-flat":               #fff,
-    "skin-accent":             #fff,   
-    "skin-sidenav-item":       #fff,   
+    "skin-sidenav-item":       #fff,
     "skin-sidenav-item-hover": #fff,
     "skin-gradient-start":     #fff,
     "skin-gradient-end":       #fff,
@@ -22,4 +21,3 @@ $skins: map-merge((
     "skin-text":               #fff
   )
 ), $skins);
-
